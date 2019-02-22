@@ -3,7 +3,9 @@ API for QA candidates testing
 
 ## How it works
 
-QA Test API is 
+QA Test API is a simple API to create and consult Users with simple data. 
+
+The objective is evaluate QAs in API testing, test cases and bug reports.
 
 ### POST#/users
 
@@ -20,7 +22,7 @@ Result:
 HTTP Status 201 -> Created
 HTTP Header Location -> ID of the created resource
 
-*Important*: There is a proposital bug that return HTTP 501 eventually. To deactivate this _feature_, send the adicional parameter `no_bug` with any value
+*Important*: There is a proposital bug that return HTTP 501 eventually. To deactivate this _feature_, send the adicional parameter `no_bug` with any value.
 
 ### GET#/users
 
