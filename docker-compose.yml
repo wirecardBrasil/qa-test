@@ -1,0 +1,15 @@
+version: '3'
+services:
+  redis:
+    image: redis
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
+  web:
+    build: .
+    command: ruby app.rb -o 0.0.0.0
+    volumes:
+      - .:/qa-test
+    ports:
+      - "4567:4567"
+    depends_on:
+      - redis
