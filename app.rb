@@ -53,7 +53,7 @@ post '/users' do
   ## 2 Users can have same CPF
     
   # bug: HTTP Status 500 when cpf is invalid
-  halt(500, nil) unless CPF.valid?(cpf)
+  halt(500, nil) unless CPF.valid?(cpf, strict: true)
   
   # intermitend bug. Unless if parameter no_bug is set
   halt(500, nil) if rand(4) == 0 && no_bug == "false"
