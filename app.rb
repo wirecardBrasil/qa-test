@@ -16,7 +16,7 @@ get "/users/:id" do
   content_type :json
 
   id = params["id"]
-  halt(404, { message:'User not found'}.to_json) if id >= redis.llen(:users)
+  halt(404, { message:'User not found'}.to_json) if id.to_i >= redis.llen(:users)
   redis.lrange(:users, id, id)
 end
 
