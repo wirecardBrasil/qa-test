@@ -11,10 +11,10 @@ The objective is evaluate QAs in API testing, test cases and bug reports.
 
 ```json
 {
-	"name": "QA Candidate", # name
-	"cpf": "780.443.260-73", # CPF with dots (.) and dash (-) with verification digit
-	"email": "candidate@wirecard.com", # email
-	"birthday": "1990-01-01" # date in ISO 8601 format
+	"name": "QA Candidate", // name
+	"cpf": "780.443.260-73", // CPF with dots (.) and dash (-) with verification digit
+	"email": "candidate@wirecard.com", // email
+	"birthday": "1990-01-01" // date in ISO 8601 format
 }
 ```
 
@@ -48,7 +48,7 @@ We inserted some bugs that we hope the candidate may find:
 1. (Easy level) When an invalid CPF is taken, API returns HTTP Status 500
 2. (Easy level) API accepts email with invalid format (not name@domain.com)
 3. (Easy level) Name without maximium value
-3. (Easy level) 2 Users can have same CPF
-4. (Medium level) Email mas size is 31, not 30 as in error message
-2. (Medium level) Birthday allows future dates
-4. (Hard level) Intermittent bug: in 1 of 5 command of Post#/users returns HTTP API 500 for no reason
+4. (Easy level) 2 Users can have same CPF
+5. (Medium level) Email mas size is 31, not 30 as in error message
+6. (Medium level) Birthday allows future dates
+7. (Hard level) Intermittent bug: in 1 of 5 command of Post#/users returns HTTP API 500 for no reason
