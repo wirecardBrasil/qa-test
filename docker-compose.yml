@@ -13,3 +13,5 @@ services:
       - "4567:4567"
     depends_on:
       - redis
+    environment:
+      - REDIS_URL=redis://redis
