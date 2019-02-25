@@ -30,7 +30,7 @@ Returns the list of all users
 
 ### GET#/users/:id
 
-Returns the user by this `id` given on Location header when created.
+Returns the user by his `id` given on Location header when created.
 
 ## What it is been evaluated
 
