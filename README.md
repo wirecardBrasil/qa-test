@@ -30,7 +30,7 @@ Returns the list of all users
 
 ### GET#/users/:id
 
-Returns the user by his `id` given on Location header when created.
+Returns the user by his `id` given Location header when created.
 
 ## What it is been evaluated
 
@@ -49,6 +49,6 @@ We inserted some bugs that we hope the candidate may find:
 2. (Easy level) API accepts email with invalid format (not name@domain.com)
 3. (Easy level) Name without maximium value
 4. (Easy level) 2 Users can have same CPF
-5. (Medium level) Email mas size is 31, not 30 as in error message
+5. (Medium level) Email size is 31, not 30 as error message says
 6. (Medium level) Birthday allows future dates
 7. (Hard level) Intermittent bug: in 1 of 5 command of Post#/users returns HTTP API 500 for no reason
