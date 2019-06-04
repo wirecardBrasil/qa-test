@@ -22,7 +22,7 @@ Result:
 HTTP Status 201 -> Created
 HTTP Header Location -> ID of the created resource
 
-*Important*: There is a proposital bug that return HTTP 501 eventually. To deactivate this _feature_, send the adicional parameter `no_bug` with any value.
+*Important*: There is a proposital bug that returns HTTP 501 eventually. To deactivate this _feature_, send the adicional parameter `no_bug` with any value.
 
 ### GET#/users
 
